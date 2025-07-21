@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookMyShow Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./logo1.png">
+</head>
+<body>
+
+  <!-- ====== Navbar ====== -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <span class="logo">🎟️ <strong>Vanthu Paru</strong></span></div>
+      <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+      <div class="navbar-center" id="nav-menu">
+        <select>
+          <option>Chennai</option>
+          <option>Coimbatore</option>
+          <option>Madurai</option>
+        </select>
+        
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Activities</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-right">
+        <input type="text" placeholder="Search for movies, events..." />
+        <button class="btn search">Search</button>
+        <button class="btn login">Login</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ====== Movies Section ====== -->
+  <section class="section-title"><h2>Now Showing - Movies</h2></section>
+  <section class="cards">
+    <div class="card"><img src="./Leo.jpg"><h3>Leo</h3><a href="#">Book Now</a><div class="rating">⭐ 4.5</div></div>
+    <div class="card"><img src="./jailer.webp"><h3>Jailer</h3><a href="#">Book Now</a><div class="rating">⭐ 4.2</div></div>
+    <div class="card"><img src="./Beast.cms"><h3>Beast</h3><a href="#">Book Now</a><div class="rating">⭐ 4.0</div></div>
+    <div class="card"><img src="./Vikram.jpg"><h3>Vikram</h3><a href="#">Book Now </a><div class="rating">⭐ 4.8</div></div>
+    <div class="card"><img src="./RRR.jpg"><h3>RRR</h3><a href="#">Book Now</a><div class="rating">⭐ 4.3</div></div>
+    <div class="card"><img src="./Kantara.jpeg"><h3>Kantara</h3><a href="#">Book Now</a><div class="rating">⭐ 4.4</div></div>
+    <div class="card"><img src="./pushpa2.jpg"><h3>Pushpa 2</h3><a href="#">Book Now</a><div class="rating">⭐ 4.5</div></div>
+  </section>
+
+  <!-- ====== Events Section ====== -->
+  <section class="section-title"><h2>Events</h2></section>
+  <section class="cards">
+    <div class="card"><img src="./ar rahuman.jpg"><h3>AR Rahman Live</h3><a href="#">View</a></div>
+    <div class="card"><img src="./stand-up.jpg"><h3>Standup Comedy</h3><a href="#">View</a></div>
+    <div class="card"><img src="./classical-night.png"><h3>Classical Night</h3><a href="#">View</a></div>
+    <div class="card"><img src="./Magic-Night.jpg"><h3>Magic Night</h3><a href="#">View</a></div>
+    <div class="card"><img src="./dj night.jpg"><h3>DJ Night</h3><a href="#">View</a></div>
+    <div class="card"><img src="./drama.jpg"><h3>Tamil Drama</h3><a href="#">View</a></div>
+    <div class="card"><img src="./food fest.jpg"><h3>Food Fest</h3><a href="#">View</a></div>
+  </section>
+
+  <!-- ====== Sports Section ====== -->
+  <section class="section-title"><h2>Sports</h2></section>
+  <section class="cards">
+    <div class="card"><img src="./csk vs mi.jpg"><h3>CSK vs MI</h3><a href="#">Book</a></div>
+    <div class="card"><img src="./marathon.webp"><h3>Coimbatore Marathon</h3><a href="#">Join</a></div>
+    <div class="card"><img src="./kabaddi-league.png"><h3>Kabaddi League</h3><a href="#">Book</a></div>
+    <div class="card"><img src="./ISL finals.webp"><h3>ISL Finals</h3><a href="#">Book</a></div>
+    <div class="card"><img src="./open batmiton.jpg"><h3>Open Badminton</h3><a href="#">Join</a></div>
+    <div class="card"><img src="./cricket 7s.jpg"><h3>Cricket 7s</h3><a href="#">Register</a></div>
+    <div class="card"><img src="./cycle-road-racing.avif"><h3>Cycling Race</h3><a href="#">Join</a></div>
+  </section>
+
+  <!-- ====== Activities Section ====== -->
+  <section class="section-title"><h2>Activities</h2></section>
+  <section class="cards">
+    <div class="card"><img src="./escape_my_room.jpg"><h3>Escape Room</h3><a href="#">Join</a></div>
+    <div class="card"><img src="./paint ball.jpg"><h3>Paint Ball</h3><a href="#">Register</a></div>
+    <div class="card"><img src="./pottery workshop.webp"><h3>Pottery Workshop</h3><a href="#">Join</a></div>
+    <div class="card"><img src="./cooking class.jpg"><h3>Cooking Class</h3><a href="#">Register</a></div>
+    <div class="card"><img src="./dance workshop.jpg"><h3>Dance Workshop</h3><a href="#">Join</a></div>
+    <div class="card"><img src="./yoga class.jpg"><h3>Yoga Class</h3><a href="#">Join</a></div>
+    <div class="card"><img src="./zumba session.jpeg"><h3>Zumba Session</h3><a href="#">Register</a></div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>BookMyShow Clone</h3>
+        <p>Your one-stop destination for Movies, Events, Sports & more.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 BookMyShow Clone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ====== JavaScript for Hamburger ====== -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
